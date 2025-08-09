@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sanzganteng — Layanan & Harga</title>
+<style>
+  :root{
+    --bg1:#7b2cff; --bg2:#b63cff; --card:#fff;
+    --muted:#6b6b6b; --accent-w:#25D366; --price-bg:#ef4444;
+  }
+  html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+  body{
+    background: linear-gradient(135deg,var(--bg1),var(--bg2));
+    background-size: 200% 200%;
+    animation: bgmove 10s linear infinite;
+    -webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;align-items:center;padding:18px;
+  }
+  @keyframes bgmove{0%{background-position:0% 0%}50%{background-position:100% 100%}100%{background-position:0% 0%}}
+
+  .container{width:100%;max-width:520px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+  .logo{width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,0.12);display:grid;place-items:center;font-weight:700;color:#fff}
+  h1{font-size:18px;margin:0;color:#fff}
+  p.subtitle{margin:2px 0 0;color:rgba(255,255,255,0.9);font-size:13px}
+
+  .list{margin-top:8px;display:flex;flex-direction:column;gap:14px}
+  .card{
+    display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:10px;background:var(--card);
+    box-shadow:0 8px 22px rgba(0,0,0,0.12);cursor:pointer;text-decoration:none;color:inherit;
+    transition:transform .12s ease,box-shadow .12s ease;
+  }
+  .card:active{transform:scale(.995)}
+  .card:hover{box-shadow:0 14px 34px rgba(0,0,0,0.16)}
+  .icon{
+    width:56px;height:56px;border-radius:10px;background:linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.02));
+    display:grid;place-items:center;font-size:28px;color:var(--muted)
+  }
+  .meta{flex:1;min-width:0}
+  .title{font-size:15px;margin:0 0 4px;color:#111;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .desc{margin:0;color:var(--muted);font-size:13px}
+  .price{
+    background:#111;color:#fff;padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px;
+    border:2px solid rgba(0,0,0,0.04);min-width:64px;text-align:center;
+  }
+
+  .made{margin-top:18px;text-align:center;color:rgba(255,255,255,0.9);font-size:12px}
+  @media (max-width:420px){
+    .icon{width:48px;height:48px;font-size:24px}
+    .price{padding:6px 8px;font-size:12px;min-width:56px}
+    .title{font-size:14px}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">SG</div>
+      <div>
+        <h1>Sanzganteng</h1>
+        <p class="subtitle">Pilih layanan — tekan untuk WA</p>
+      </div>
+    </header>
+
+    <div class="list">
+      <!-- AIMBOT 15K -->
+      <a class="card" href="https://wa.me/6288971548048" target="_blank" rel="noopener" onclick="playClick()">
+        <div class="icon" aria-hidden>
+          <!-- crosshair icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v3M12 19v3M4 12H1M23 12h-3M6.2 6.2l-2.1-2.1M19.9 19.9l-2.1-2.1M6.2 17.8l-2.1 2.1M19.9 4.1l-2.1 2.1" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/></svg>
+        </div>
+        <div class="meta">
+          <div class="title">AIMLOCK</div>
+          <div class="desc">Aimlock sanztic</div>
+        </div>
+        <div class="price">IDR 15K</div>
+      </a>
+
+      <!-- DRAG HS 10K -->
+      <a class="card" href="https://wa.me/6288971548048" target="_blank" rel="noopener" onclick="playClick()">
+        <div class="icon" aria-hidden>
+          <!-- drag icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18M3 12h18M3 17h18" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/></svg>
+        </div>
+        <div class="meta">
+          <div class="title">DRAG HS</div>
+          <div class="desc">Drag headshot / sanatic</div>
+        </div>
+        <div class="price">IDR 10K</div>
+      </a>
+
+      <!-- AIMLOCK COMBO 20K -->
+      <a class="card" href="https://wa.me/6288971548048" target="_blank" rel="noopener" onclick="playClick()">
+        <div class="icon" aria-hidden>
+          <!-- lock icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#111" stroke-width="1.2" fill="#fff"/><path d="M7 11V8a5 5 0 0 1 10 0v3" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="meta">
+          <div class="title">AIMBOT </div>
+          <div class="desc">AIMBOT + extraVas</div>
+        </div>
+        <div class="price">IDR 20K</div>
+      </a>
+
+      <!-- SUNTIK SOSMED 5K -->
+      <a class="card" href="https://wa.me/6288971548048" target="_blank" rel="noopener" onclick="playClick()">
+        <div class="icon" aria-hidden>
+          <!-- syringe / spark icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 7l-4-4-2 2L7 11l-2 5 5-2 8-8 2-2z" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/></svg>
+        </div>
+        <div class="meta">
+          <div class="title">SUNTIK SOSMED</div>
+          <div class="desc">Jasa suntik followers / engagement</div>
+        </div>
+        <div class="price">IDR 5K</div>
+      </a>
+
+      <!-- NOKOS 8K -->
+      <a class="card" href="https://wa.me/6288971548048" target="_blank" rel="noopener" onclick="playClick()">
+        <div class="icon" aria-hidden>
+          <!-- wallet icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7h20v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/></svg>
+        </div>
+        <div class="meta">
+          <div class="title">NOKOS</div>
+          <div class="desc"> / akun Wa/ jasa terkait</div>
+        </div>
+        <div class="price">IDR 8K</div>
+      </a>
+
+      <!-- BUAT WEB 30K -->
+      <a class="card" href="https://wa.me/6288971548048" target="_blank" rel="noopener" onclick="playClick()">
+        <div class="icon" aria-hidden>
+          <!-- code icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 18l6-6-6-6" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/><path d="M8 6l-6 6 6 6" stroke="#111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/></svg>
+        </div>
+        <div class="meta">
+          <div class="title">BUAT WEB</div>
+          <div class="desc">Pembuatan website / landing page</div>
+        </div>
+        <div class="price">IDR 30K</div>
+      </a>
+    </div>
+
+    <div class="made">© created by mas sanxzcok
+   </div>
+  </div>
+
+<script>
+  function playClick(){
+    try{
+      const c = new Audio('click.mp3');
+      c.play().catch(()=>{});
+    }catch(e){}
+  }
+</script>
+</body>
+</html>
